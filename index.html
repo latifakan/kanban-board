@@ -28,35 +28,32 @@
             id="taskInput"
             class="task-input"
             placeholder="input task..."
-            oninput="console.log('capitilize')"
           />
-          <button class="add-task-btn" onclick="console.log('add task please')">
+          <button class="add-task-btn" onclick="addTask('todo')">
             add task
           </button>
         </div>
-        <div
-          class="task-container"
-          ondrop="console.log('ondrop')"
-          ondragover="console.log('ondragover')"
-        ></div>
+        <div class="task-container"></div>
       </div>
-      <div class="column" id="in-progress">
+      <div
+        class="column"
+        id="in-progress"
+        ondrop="drop(event, 'in-progress')"
+        ondragover="allowDrop(event)"
+      >
         <h2>in-progress</h2>
         <hr />
-        <div
-          class="task-container"
-          ondrop="console.log('ondrop')"
-          ondragover="console.log('ondragover')"
-        ></div>
+        <div class="task-container"></div>
       </div>
-      <div class="column" id="done">
+      <div
+        class="column"
+        id="done"
+        ondrop="drop(event, 'done')"
+        ondragover="allowDrop(event)"
+      >
         <h2>done</h2>
         <hr />
-        <div
-          class="task-container"
-          ondrop="console.log('ondrop')"
-          ondragover="console.log('ondragover')"
-        ></div>
+        <div class="task-container"></div>
       </div>
     </div>
 
