@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Kanban Board</title>
+    <!-- robot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head">
+      <h1>Latif Tasks</h1>
+    </div>
+    <div class="board">
+      <div class="column" id="todo">
+        <h2>todo</h2>
+        <hr />
+        <div class="task-in-btn">
+          <input
+            type="text"
+            id="taskInput"
+            class="task-input"
+            placeholder="input task..."
+            oninput="console.log('capitilize')"
+          />
+          <button class="add-task-btn" onclick="console.log('add task please')">
+            add task
+          </button>
+        </div>
+        <div
+          class="task-container"
+          ondrop="console.log('ondrop')"
+          ondragover="console.log('ondragover')"
+        ></div>
+      </div>
+      <div class="column" id="in-progress">
+        <h2>in-progress</h2>
+        <hr />
+        <div
+          class="task-container"
+          ondrop="console.log('ondrop')"
+          ondragover="console.log('ondragover')"
+        ></div>
+      </div>
+      <div class="column" id="done">
+        <h2>done</h2>
+        <hr />
+        <div
+          class="task-container"
+          ondrop="console.log('ondrop')"
+          ondragover="console.log('ondragover')"
+        ></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
