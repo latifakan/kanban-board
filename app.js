@@ -98,13 +98,17 @@ function deleteTask(taskId) {
 
 // ---------------------------------------------------------------------
 
+/**
+ * 
+ */
+
 function addTask(columnId) {
     const taskInput = document.getElementById('taskInput');
     const taskContent = taskInput.value.trim();
     if (taskContent !== "") {
         const newTask = {
-            id: `task-${Date.now()}`,
-            content: taskContent,
+            id: `task-${Date.now()}`, // creates id with the date of the task
+            content: taskContent, // name of the task
             status: columnId
         }
         tasks.push(newTask)
