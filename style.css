@@ -130,3 +130,20 @@ body {
     justify-content: space-around;
     margin-bottom: 3px;
   }
+
+  #website-button {   
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1em;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        background-color: #0d6efd;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 0.3em 1.5em;
+    }
+}
